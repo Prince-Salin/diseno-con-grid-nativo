@@ -1,0 +1,37 @@
+/* Variables compartidas por el tema claro y el modo oscuro. */
+:root {
+    color-scheme: light;
+    --fondo: #f1eee8;
+    --superficie: rgb(251 250 247 / 82%);
+    --texto: #20201f;
+    --texto-secundario: #74716d;
+    --acento: #b94331;
+    --acento-suave: #f1ded7;
+    --violeta: #51466e;
+    --cristal: rgb(255 255 255 / 52%);
+    --borde: rgb(42 38 34 / 12%);
+    --sombra: 0 12px 30px rgb(37 30 24 / 8%);
+    --radio: 18px;
+    --radio-tarjeta: 12px;
+    --espacio: 14px;
+    --blur: 18px;
+    --fuente-texto: "DM Sans", Arial, sans-serif;
+    --fuente-titulos: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Cambia colores y superficies según la preferencia del sistema operativo. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --fondo: #17151b;
+        --superficie: rgb(35 31 42 / 88%);
+        --texto: #f2eef4;
+        --texto-secundario: #b2aebb;
+        --acento: #f07864;
+        --acento-suave: #442c32;
+        --violeta: #6f5a96;
+        --cristal: rgb(42 38 52 / 68%);
+        --borde: rgb(235 225 245 / 14%);
+        --sombra: 0 12px 30px rgb(0 0 0 / 24%);
+    }
+}
